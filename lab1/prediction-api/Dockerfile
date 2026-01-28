@@ -10,8 +10,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 # Expose the port that our app runs in
 EXPOSE 5000
-# Environment Variables
-ENV MODEL_REPO=/usr/src/myapp
+# Enviroment Variables
+ENV PROJECT_ID=your-gcp-project-id
+ENV MODEL_REPO=your-model-repos-gcs-bucket
+ENV MODEL_NAME=model.h5
 # Run our App
 CMD ["python3","app.py"]
 # We can also use an ENTRYPOINT and a CMD

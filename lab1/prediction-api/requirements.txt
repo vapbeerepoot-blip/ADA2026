@@ -1,4 +1,3 @@
-setuptools
 flask
 pandas
 keras
@@ -6,3 +5,4 @@ tensorflow
 numpy
 h5py
 six
+google-cloud-storage
